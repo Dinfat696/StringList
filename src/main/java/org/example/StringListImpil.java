@@ -7,15 +7,15 @@ import org.example.Exception.StorageIsFullException;
 
 import java.util.Arrays;
 
-public class StringListImpl implements StringList {
+public class StringListImpil implements StringList {
     private final String[] storage;
     private int size;
 
-    public StringListImpl() {
+    public StringListImpil() {
         storage = new String[10];
     }
 
-    public StringListImpl(int initSize) {
+    public StringListImpil(int initSize) {
         storage = new String[initSize];
     }
 

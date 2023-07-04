@@ -3,7 +3,7 @@ import org.example.Exception.InvalidIndexException;
 import org.example.Exception.NullItemException;
 import org.example.Exception.StorageIsFullException;
 import org.example.StringList;
-import org.example.StringListImpl;
+import org.example.StringListImpil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,11 +11,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class StringListTest {
-    private StringListImpl stringList;
+    private StringListImpil stringList;
 
     @BeforeEach
     public void setUp() {
-        stringList = new StringListImpl();
+        stringList = new StringListImpil();
     }
 
     @Test
@@ -54,7 +54,7 @@ public class StringListTest {
 
     @Test
     void equalsTest() {
-        StringList otherList = new StringListImpl();
+        StringList otherList = new StringListImpil();
         stringList.add("Hello");
         otherList.add("Hello");
         assertTrue(stringList.equals(otherList));

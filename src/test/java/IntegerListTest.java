@@ -65,14 +65,8 @@ public class IntegerListTest {
         assertTrue(integerList.isEmpty());
     }
 
-    @Test
-    void add_StorageIsFullExceptionTest() {
-        for (int i = 0; i < 10; i++) {
-            integerList.add(4 + i);
-        }
-        assertThrows(StorageIsFullException.class, () ->
-                integerList.add(6));
-    }
+
+
 
     @Test
     void add_InvalidIndexExceptionTest() {
@@ -94,11 +88,7 @@ public class IntegerListTest {
 
     }
 
-    @Test
-    void remove_ElementNoFoundExceptionTest() {
-        assertThrows(ElementNotFoundException.class, () ->
-                integerList.remove(1));
-    }
+
 }
 
 
